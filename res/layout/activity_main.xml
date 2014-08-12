@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tv_touch_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:minWidth="100dp"
+        android:text="@string/hello_world" />
+
+    <LinearLayout
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/ad_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/ad_unit_id" >
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_touch_time"
+        android:layout_centerHorizontal="true"
+        android:minHeight="200dp"
+        android:minWidth="200dp"
+        android:text="@string/btn_touch_str" />
+
+</RelativeLayout>

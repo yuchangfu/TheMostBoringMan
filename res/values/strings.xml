@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TheMostBoringMan</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_touch_str"><html>TOUCH ME  \n AS LONG AS \n YOU CAN</html></string>
+    <string name="ad_unit_id">ca-app-pub-4041240970609634/8971881906</string>
+
+</resources>
